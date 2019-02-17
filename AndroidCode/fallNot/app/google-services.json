@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "890891512809",
+    "firebase_url": "https://fallnot.firebaseio.com",
+    "project_id": "fallnot",
+    "storage_bucket": "fallnot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890891512809:android:093a7a3160e93c3c",
+        "android_client_info": {
+          "package_name": "com.siddharth_vijay.fallnot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890891512809-efmm6km87kv7lrjoidjej38st2d1hiu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdF9Ut4pYkt6WXlpASzq5IhJ1qILYAjTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
