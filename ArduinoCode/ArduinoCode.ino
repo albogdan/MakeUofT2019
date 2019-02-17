@@ -48,7 +48,7 @@ const long interval = 2000;              // interval at which to read sensor
 ADXL345 adxl = ADXL345();             // USE FOR I2C COMMUNICATION
   
 void setup() {
-
+  ESP.wdtDisable();
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
   pinMode(LED_BUILTIN, OUTPUT);
@@ -84,7 +84,9 @@ void setup() {
   Serial.println("SPI and RFID initialized");
 
   Serial.println("Tap card to activate");
+
   activate();
+
 }
 
 int xAccel,yAccel,zAccel, xAccelPrev,yAccelPrev,zAccelPrev,touchInput, touchInputPrev;
@@ -94,14 +96,13 @@ String location;
 
 void activate(){
   // Look for new cards
-  if ( ! mfrc522.PICC_IsNewCardPresent()) 
+  while ( ! mfrc522.PICC_IsNewCardPresent()) 
   {
-    return;
+    ESP.wdtFeed();
   }
   // Select one of the cards
-  if ( ! mfrc522.PICC_ReadCardSerial()) 
-  {
-    return;
+  while ( ! mfrc522.PICC_ReadCardSerial()) 
+  { ESP.wdtFeed();
   }
   //Show UID on serial monitor
   Serial.print("UID tag :");
@@ -170,4 +171,5 @@ void loop() {
 
 
   delay(500);
+  ESP.wdtFeed();
 }
