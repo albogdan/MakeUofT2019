@@ -23,7 +23,7 @@
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance
 
 
-#define FIREBASE_AUTH "w9tXoTQJ4GMzQIQjcwJdMyPnhUZ0EE0UQ5VMIhyS"
+#define FIREBASE_AUTH ""
 #define FIREBASE_HOST "fallnot.firebaseio.com"
 
 #define DHTTYPE DHT11
