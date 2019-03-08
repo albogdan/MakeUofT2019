@@ -18,6 +18,8 @@ It is the first hardware hackathon for all of us and it was a fresh experience t
 ## What we learned
 One valuable lesson that we learned was that we should pull the plug on an idea, or fork to trying out a different method of achieving the goal if it does not work after a significant amount of time. Being too stuck on a single idea can result in losing a lot of precious time.
 
+A demonstration video can be seen [here](https://www.youtube.com/watch?v=5iqh7y6gNkA)
+
 ## What's next for FallNot
 We hope to take FallNot to the next level by filling in all the places in which we did not have enough time to fully explore due to the nature of a hackathon. In the future, we could integrate and miniaturize the system to fit nicely in a wristband, add multi-platform support application, and reduce cost per unit by utilizing mesh networks instead of GPRS, to enable connectivity in remote areas. We can also develop a communication protocol, much like a walkie-talkie that can prove to be very useful in a trek setting.
 
